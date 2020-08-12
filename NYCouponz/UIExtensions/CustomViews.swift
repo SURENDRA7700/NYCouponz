@@ -148,11 +148,11 @@ class RegisterField: UITextField {
         self.autocapitalizationType = .none
         self.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         self.textAlignment = .right
-        self.textColor = UIColor.ketoGenik.Black
+        self.textColor = UIColor.NYCouponz.Black
         self.borderStyle = .roundedRect
         self.layer.cornerRadius = 8.0
         self.layer.borderWidth = 1.0
-        self.layer.borderColor = UIColor.ketoGenik.borderGray.cgColor
+        self.layer.borderColor = UIColor.NYCouponz.borderGray.cgColor
         self.clipsToBounds = true;
     }
     
@@ -757,7 +757,7 @@ class KetoButton: UIButton {
     private var shadowLayer: CAShapeLayer!
     var cornerRadius: CGFloat = 8.0
     var shadowRadius: CGFloat = 6
-    var fillColor: UIColor = UIColor.ketoGenik.Blue // the color applied to the shadowLayer, rather than the view's backgroundColor
+    var fillColor: UIColor = UIColor.NYCouponz.Blue // the color applied to the shadowLayer, rather than the view's backgroundColor
      
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -768,7 +768,7 @@ class KetoButton: UIButton {
             shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
             shadowLayer.fillColor = fillColor.cgColor
 
-            shadowLayer.shadowColor = UIColor.ketoGenik.Blue.cgColor
+            shadowLayer.shadowColor = UIColor.NYCouponz.Blue.cgColor
             shadowLayer.shadowPath = shadowLayer.path
             shadowLayer.shadowOffset = CGSize(width: 0.0, height: 1.0)
             shadowLayer.shadowOpacity = 0.6
@@ -838,7 +838,7 @@ class CornerShadowView: UIView {
             shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
             shadowLayer.fillColor = fillColor.cgColor
 
-            shadowLayer.shadowColor = UIColor.ketoGenik.borderGray.cgColor
+            shadowLayer.shadowColor = UIColor.NYCouponz.borderGray.cgColor
             shadowLayer.shadowPath = shadowLayer.path
             shadowLayer.shadowOffset = CGSize(width: 0.0, height: 1.0)
             shadowLayer.shadowOpacity = 0.6
@@ -867,7 +867,7 @@ class CornerShadowView: UIView {
         borderLayer = CAShapeLayer()
         borderLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
         borderLayer.lineWidth = 1
-        borderLayer.strokeColor = UIColor.ketoGenik.Blue.cgColor
+        borderLayer.strokeColor = UIColor.NYCouponz.Blue.cgColor
         borderLayer.fillColor = UIColor.clear.cgColor
         borderLayer.frame = self.bounds
         self.layer.addSublayer(borderLayer)

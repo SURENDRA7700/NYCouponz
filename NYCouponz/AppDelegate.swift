@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func setNavigationBarStyle() {
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.primaryArabic(size: 16)], for: UIControl.State.normal)
-        UINavigationBar.appearance().barTintColor = UIColor.ketoGenik.Blue
+        UINavigationBar.appearance().barTintColor = UIColor.NYCouponz.Blue
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) ]
         UINavigationBar.appearance().isTranslucent = false

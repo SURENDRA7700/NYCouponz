@@ -21,19 +21,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.displayScreen()
     }
     
+//    func displayScreen() {
+//         if UserDefaults.standard.value(forKey: "HELP") != nil{
+//                  let vc = ViewController()
+//                  self.window?.rootViewController = vc
+//                  self.window?.makeKeyAndVisible()
+//              }else{
+//                  let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+//                  if let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC{
+//                      let rootNC = UINavigationController(rootViewController: vc)
+//                      self.window?.rootViewController = rootNC
+//                      self.window?.makeKeyAndVisible()
+//                  }
+//              }
+//    }
+    
     func displayScreen() {
-         if UserDefaults.standard.value(forKey: "HELP") != nil{
-                  let vc = ViewController()
-                  self.window?.rootViewController = vc
-                  self.window?.makeKeyAndVisible()
-              }else{
-                  let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-                  if let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC{
-                      let rootNC = UINavigationController(rootViewController: vc)
-                      self.window?.rootViewController = rootNC
-                      self.window?.makeKeyAndVisible()
-                  }
-              }
+        let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC{
+            let rootNC = UINavigationController(rootViewController: vc)
+            self.window?.rootViewController = rootNC
+            self.window?.makeKeyAndVisible()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

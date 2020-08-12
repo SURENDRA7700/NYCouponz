@@ -13,7 +13,7 @@ import UIKit
 
 extension UIColor {
     
-    struct ketoGenik {
+    struct NYCouponz {
         static let Blue : UIColor = #colorLiteral(red: 0.2039215686, green: 0.6509803922, blue: 0.6941176471, alpha: 1)
         static let LightBlue : UIColor = #colorLiteral(red: 0.9215686275, green: 0.9647058824, blue: 0.968627451, alpha: 1)
 
